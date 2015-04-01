@@ -1,0 +1,6 @@
+「afxres.hがない」というエラーが出るときは、
+ツール→オプション→VC++ディレクトリ→インクルードファイル　に
+
+$(VCInstallDir)ce\atlmfc\include
+
+を追加するとOK
