@@ -84,6 +84,12 @@
   <ItemGroup>
     <ResourceCompile Include="speedplay.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="readme.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

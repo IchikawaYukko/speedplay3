@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{0c795404-2c03-4788-92e6-6353c8d1b97a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="speedplay-mci.c">
@@ -34,5 +37,19 @@
     <ResourceCompile Include="speedplay.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="readme.txt">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="LICENSE">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Documents</Filter>
+    </None>
   </ItemGroup>
 </Project>

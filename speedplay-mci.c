@@ -1,17 +1,13 @@
 /*******************************************************************************************************
  *	ファイル名： speedplay-mci.cpp
  *	ファイルの内容：Speedplay 用の MCIコマンド生成/送信処理コード
- *	作成者：fuwuyuan
- *	修正：
+ *	作成者：fuwuyuan/市川ゆり子
  *	ライセンス/Licensing:
- *	このファイルは、著作者である fuwuyuan によってパブリックドメインに置かれています。
- *	これは全世界に適用されます。
- *		著作物をパブリックドメインに置くことが法律上不可能である場合：
- *	fuwuyuan は、何人に対しても、法律上課される条件以外のいかなる条件も付することなく、
- *	あらゆる目的でこの著作物を利用することを許諾します。
+ *	このファイルは、著作者である fuwuyuan/市川ゆり子 によってMIT Licenseのもと公開されています。
  *
- *	This source code has been released into the public domain by its author, fuwuyuan.
- *  This applies worldwide.
+ *	Copyright (c) 2015 fuwuyuan/市川ゆり子
+ *	This software is released under the MIT License, see LICENSE.txt.
+ *	http://opensource.org/licenses/mit-license.php
 *******************************************************************************************************/
 
 #pragma comment(lib, "winmm.lib")

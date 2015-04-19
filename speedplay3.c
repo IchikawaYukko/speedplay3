@@ -2,18 +2,13 @@
  *	Speedplay version 3
  *	ファイル名： speedplay.cpp
  *	ファイルの内容：Speedplay メインプログラム
- *	作成者：fuwuyuan 2003-2006
- *	修正：
- *
+ *	作成者：fuwuyuan/市川ゆり子
  *	ライセンス/Licensing:
- *	このファイルは、著作者である fuwuyuan によってパブリックドメインに置かれています。
- *	これは全世界に適用されます。
- *		著作物をパブリックドメインに置くことが法律上不可能である場合：
- *	fuwuyuan は、何人に対しても、法律上課される条件以外のいかなる条件も付することなく、
- *	あらゆる目的でこの著作物を利用することを許諾します。
+ *	このファイルは、著作者である fuwuyuan/市川ゆり子 によってMIT Licenseのもと公開されています。
  *
- *	This source code has been released into the public domain by its author, fuwuyuan.
- *  This applies worldwide.
+ *	Copyright (c) 2015 fuwuyuan/市川ゆり子
+ *	This software is released under the MIT License, see LICENSE.txt.
+ *	http://opensource.org/licenses/mit-license.php
 ************************************************************************************/
 // TODO シークバーを作る
 // TODO ループ再生できるようにする
@@ -142,13 +137,13 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	}
 
 	/*	メインウィンドウの作成	*/
-	hwnd = CreateWindow (szAppName, TEXT("Speedplay version 3"),
+	hwnd = CreateWindow (szAppName, TEXT("Speedplay version 3.01"),
 						WS_OVERLAPPEDWINDOW,
 						CW_USEDEFAULT,CW_USEDEFAULT,
 						608 + 8,288 + 34,
 						NULL, NULL, hInstance, NULL);
 	/*	フルスクリーン用ウィンドウの作成	*/
-	full_hwnd = CreateWindow (szAppName2, TEXT("Speedplay version 3"),
+	full_hwnd = CreateWindow (szAppName2, TEXT("Speedplay version 3.01"),
 						WS_POPUP,
 						0,0,
 						GetSystemMetrics(SM_CXSCREEN),GetSystemMetrics(SM_CXSCREEN),
@@ -188,10 +183,8 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	OPENFILENAME file;					//「ファイルを開く」ダイアログ設定構造体
 	/*	文字列生成	*/
 	TCHAR szVerinfo[] = \
-	TEXT("Speedplay Version 3\nCoded by fuwuyuan 2001-2010\n\n") \
-	TEXT("This program has been released into the public domain by its author, fuwuyuan.\n") \
-	TEXT("This applies worldwide.");
-
+	TEXT("Speedplay Version 3.01\nCoded by fuwuyuan/市川ゆり子 2001-2015\n\n") \
+	TEXT("This software is released under the MIT License, see LICENSE.txt.\n");
 	/*	メッセージによって分岐	*/
 	switch(message) {
 		case WM_CREATE :
@@ -415,7 +408,7 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				/*	バージョン情報ボタン	*/
 				case ID_VER:
 					/*	ダイアログ表示	*/
-					MessageBox(hwnd, szVerinfo, TEXT("Speedplay Version 3"), MB_ICONINFORMATION | MB_OK);
+					MessageBox(hwnd, szVerinfo, TEXT("Speedplay Version 3.01"), MB_ICONINFORMATION | MB_OK);
 					break;
 			}
 			return 0;
